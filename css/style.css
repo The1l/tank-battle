@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0d0d;
+  color: #e8e8e8;
+  font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px 12px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  margin-bottom: 2px;
+  color: #f0c040;
+}
+
+.sub {
+  color: #666;
+  letter-spacing: 3px;
+  font-size: 11px;
+  margin-bottom: 14px;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.hud-item {
+  background: #171717;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 6px 14px;
+  min-width: 64px;
+  flex: 1;
+}
+
+.hud-item .label {
+  display: block;
+  font-size: 10px;
+  color: #8a8a8a;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.hud-item span:last-child {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+.dot.gold {
+  background: #e8b23a;
+  box-shadow: 0 0 4px rgba(232, 178, 58, 0.6);
+}
+
+.dot.enemy {
+  background: #8a8f95;
+}
+
+.stage {
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
+  border: 1px solid #222;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.help {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.help b {
+  color: #9a9a9a;
+}

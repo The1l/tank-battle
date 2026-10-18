@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>坦克大战 · Tank Battle</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>坦克大战</h1>
+      <p class="sub">TANK BATTLE</p>
+    </header>
+
+    <div class="hud">
+      <div class="hud-item"><span class="label">得分</span><span id="score">0</span></div>
+      <div class="hud-item"><span class="label">最高分</span><span id="hiscore">0</span></div>
+      <div class="hud-item"><span class="label">关卡</span><span id="stage">1</span></div>
+      <div class="hud-item"><span class="label">生命</span><span id="lives"></span></div>
+      <div class="hud-item"><span class="label">敌人</span><span id="enemies"></span></div>
+    </div>
+
+    <div class="stage">
+      <canvas id="game" width="520" height="520"></canvas>
+    </div>
+
+    <p class="help">
+      <b>操作：</b>方向键 / WASD 移动 &nbsp;·&nbsp; 空格 / J 射击 &nbsp;·&nbsp; P 暂停 &nbsp;·&nbsp; M 静音 &nbsp;·&nbsp; Enter 开始
+    </p>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
